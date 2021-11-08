@@ -1,0 +1,219 @@
+
+*******************************************************************************
+                                   deco7seg
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g22v10  Library DLIB-h-40-1
+Created         Sun Oct 31 00:36:05 2021
+Name            deco7seg 
+Partno          00 
+Revision        01 
+Date            31/10/2021 
+Designer        Engineer 
+Company         jlrey 
+Assembly        None 
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+a =>
+    !e0 & !e2 & !e3
+  # e0 & e1 & e2 & e3
+  # e0 & e1 & !e3
+  # e0 & !e1 & e2 & !e3
+  # !e0 & e1 & e2
+  # !e1 & !e2 & e3
+  # !e0 & e1 & !e2 & e3
+  # !e0 & !e1 & e2 & e3
+
+b =>
+    e0 & !e1 & e2 & e3
+  # !e2 & !e3
+  # !e0 & !e1 & e2 & !e3
+  # !e0 & e1 & !e2 & e3
+  # e0 & e1 & e2 & !e3
+  # !e1 & !e2 & e3
+
+c =>
+    e0 & !e1 & e2 & e3
+  # !e2 & e3
+  # e0 & e1 & !e3
+  # !e1 & !e3
+  # !e0 & e1 & e2 & !e3
+
+d =>
+    !e0 & !e2 & !e3
+  # !e0 & !e1 & e3
+  # e0 & e1 & !e2
+  # e0 & !e1 & e2
+  # !e0 & e1 & e2
+
+e =>
+    !e1 & e2 & e3
+  # e0 & e1 & e3
+  # !e0 & e1 & e2
+  # !e0 & !e2
+
+entrada =>
+    e3 , e2 , e1 , e0
+
+f =>
+    !e0 & !e1 & !e3
+  # e0 & e1 & e2 & e3
+  # e0 & !e1 & e2 & !e3
+  # !e0 & e1 & e2
+  # !e0 & !e1 & e2 & e3
+  # !e2 & e3
+
+g =>
+    e0 & e2 & e3
+  # e1 & !e2
+  # !e1 & e2 & !e3
+  # !e0 & e1 & e2
+  # !e1 & !e2 & e3
+
+s0 =>
+    cont & e1 & e2
+  # cont & !e0 & !e2
+  # cont & !e0 & e3
+  # cont & e1 & !e3
+  # cont & !e1 & !e2 & e3
+  # cont & e0 & e2 & !e3
+  # !cont & e0 & !e1 & e2 & e3
+  # !cont & e0 & e1 & !e2 & e3
+  # !cont & !e0 & !e1 & e2 & !e3
+  # !cont & e0 & !e1 & !e2 & !e3
+
+s1 =>
+    cont & !e0 & !e2
+  # cont & !e1 & !e2
+  # !cont & !e0 & e1 & e2
+  # !cont & e0 & e1 & e3
+  # cont & e0 & !e1 & e3
+  # !cont & !e0 & e2 & e3
+  # cont & e0 & e1 & !e3
+  # cont & !e0 & !e1 & !e3
+  # !cont & e0 & !e1 & e2 & !e3
+
+s2 =>
+    cont & e0 & !e1
+  # cont & e0 & !e2
+  # cont & !e1 & !e2
+  # cont & !e2 & e3
+  # cont & e2 & !e3
+  # !cont & !e0 & e2 & e3
+  # !cont & e1 & e2 & e3
+  # !cont & !e0 & e1 & !e2 & !e3
+
+s3 =>
+    !cont & e0 & e1 & e2
+  # cont & !e0 & e1 & e2
+  # cont & e0 & !e1 & e2
+  # cont & e0 & e1 & !e2
+  # !cont & e0 & !e1 & !e2
+  # cont & !e0 & !e1 & e3
+  # cont & !e0 & !e2 & !e3
+  # !cont & !e0 & e1 & !e2 & e3
+  # !cont & !e0 & !e1 & e2 & !e3
+
+s4 =>
+    cont & !e0 & e1
+  # cont & !e0 & !e2
+  # cont & e1 & e3
+  # cont & e2 & e3
+  # !cont & e0 & !e3
+  # !cont & e0 & !e1 & !e2
+  # !cont & !e1 & e2 & !e3
+
+s5 =>
+    cont & !e0 & !e1
+  # cont & !e0 & e2
+  # cont & e1 & e3
+  # cont & !e2 & e3
+  # !cont & e0 & e1 & !e3
+  # cont & !e1 & e2 & !e3
+  # !cont & e0 & !e2 & !e3
+  # !cont & e1 & !e2 & !e3
+  # !cont & e0 & !e1 & e2 & e3
+
+s6 =>
+    cont & !e0 & e1
+  # cont & e1 & !e2
+  # cont & e0 & e3
+  # cont & !e2 & e3
+  # cont & !e1 & e2 & !e3
+  # !cont & !e1 & !e2 & !e3
+  # !cont & !e0 & !e1 & e2 & e3
+  # !cont & e0 & e1 & e2 & !e3
+
+segmentos =>
+    g , f , e , d , c , b , a
+
+s0.oe  =>
+    1 
+
+s1.oe  =>
+    1 
+
+s2.oe  =>
+    1 
+
+s3.oe  =>
+    1 
+
+s4.oe  =>
+    1 
+
+s5.oe  =>
+    1 
+
+s6.oe  =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    a                           0        I        8       -       -     
+    b                           0        I        6       -       -     
+    c                           0        I        5       -       -     
+    cont                        5        V        -       -       -     
+    d                           0        I        5       -       -     
+    e                           0        I        4       -       -     
+    e0                          4        V        -       -       -     
+    e1                          3        V        -       -       -     
+    e2                          2        V        -       -       -     
+    e3                          1        V        -       -       -     
+    entrada                     0        F        -       -       -     
+    f                           0        I        6       -       -     
+    g                           0        I        5       -       -     
+    s0                          20       V        10      14      2     
+    s1                          19       V        9       16      2     
+    s2                          18       V        8       16      2     
+    s3                          17       V        9       14      2     
+    s4                          16       V        7       12      2     
+    s5                          15       V        9       10      2     
+    s6                          14       V        8       8       2     
+    segmentos                   0        F        -       -       -     
+    s0                  oe      20       D        1       1       0     
+    s1                  oe      19       D        1       1       0     
+    s2                  oe      18       D        1       1       0     
+    s3                  oe      17       D        1       1       0     
+    s4                  oe      16       D        1       1       0     
+    s5                  oe      15       D        1       1       0     
+    s6                  oe      14       D        1       1       0     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
